@@ -1,0 +1,373 @@
+:root {
+    --primary: #56407F;
+    --secondary: #7C8AE1;
+    --white: #fff;
+    --black: #000;
+    --blue: #8BBCE0;
+    --border-color: #3F3F3F;
+    --light-gray: #BEBEBE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 60rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+nav img {
+    width: 20%;
+    height: 100%;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.hamburger.change .line {
+    transition: all .3s ease;
+}
+
+.hamburger.change .line:nth-child(1) {
+  transform: rotate(45deg) translateY(1.9rem);
+}
+
+.hamburger.change .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.change .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-1.9rem);
+}
+
+.line {
+    cursor: pointer;
+    width: 3rem;
+    height: .3rem;
+    margin-bottom: 1rem;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    top: -100rem;
+    z-index: 100;
+}
+
+.active {
+    top: 10rem;
+    transition: all .3s ease;
+}
+
+.navbar-item {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.button {
+    transition: all .3s ease;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0rem 0.3rem 0.5rem var(--black);
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+}
+
+.home h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.videoEnbuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.video {
+    width: 35rem;
+    height: 20rem;
+    margin-left: 12rem;
+}
+
+.home .button {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+    width: 20%;
+    margin-left: 24rem;
+}
+
+.speechbubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speechbubble img {
+    width: 30%;
+    height: 30%;
+    margin-right: 2rem;
+    margin-top: 20rem;
+    margin-bottom: 2.3rem;
+}
+
+.bubble-part-s {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: 18rem;
+    bottom: 21rem;
+}
+
+.bubble-part-l {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: 20rem;
+    bottom: 23rem;
+}
+
+.home p {
+    background-color: var(--primary);
+    height: 50%;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 80px;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.tools {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Screenshot\ 2022-03-20\ 183511.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tools h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.tool-board {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.tool-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--blue);
+    border-radius: 40px;
+    border: 5px solid var(--border-color);
+}
+
+.tool-card h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.tool-card p {
+    font-size: 1.5rem;
+}
+
+.nieuws {
+    width: 100%;
+    height: 100%;
+}
+
+.titel-nieuws {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nieuws-stukken {
+    position: relative;
+    border-top: 5px solid var(--light-gray);
+    border-bottom: 5px solid var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--border-color);
+    height: 38rem;
+}
+
+.nieuws-card {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.nieuws-card p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: var(--light-gray);
+    width: 50%;
+}
+
+.nieuws-card .button {
+    text-transform: uppercase;
+    margin-left: 1.9rem;
+}
+
+.nieuws-stukken img {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 1rem;
+    right: 1rem;
+}
+
+.button:hover {
+    background: var(--primary);
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    margin-bottom: -5rem;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2rem 2rem 2rem;
+    justify-content: space-between;
+}
+
+.footer-heading p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: var(--white);
+}
+
+.nieuwsbrief {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nieuwsbrief p {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.nieuwsbrief input[type = "text"] {
+    width: 35%;
+    height: 3rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    transition: all .5s ease;
+}
+
+.nieuwsbrief input[type = "text"]:focus {
+    border-radius: 0;
+    padding: 2rem;
+}
+
+.nieuwsbrief input[type = "submit"] {
+    color: var(--white);
+    font-size: 1.2rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0rem 0.3rem 0.5rem var(--black);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-bottom: 2rem;
+}
+
+.nieuwsbrief input[type = "submit"]:hover {
+    background-color: var(--secondary);
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 1rem;
+}
+
+.social-icons i {
+    font-size: 2.5rem;
+    justify-content: space-between;
+    margin-right: 2rem;
+    color: var(--primary);
+    transition: all .5s ease;
+}
+
+.social-icons i:hover {
+    color: var(--white);
+    transform: scale(1.1);
+}

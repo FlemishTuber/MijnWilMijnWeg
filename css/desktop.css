@@ -1,0 +1,243 @@
+:root {
+    --primary: #56407F;
+    --secondary: #7C8AE1;
+    --white: #fff;
+    --black: #000;
+    --blue: #8BBCE0;
+    --border-color: #3F3F3F;
+    --light-gray: #BEBEBE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width: 850px) {
+    .container {
+        max-width: 850px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav img {
+        width: 15%;
+    }
+
+    .video {
+        margin-left: 24rem;
+    }
+
+    .home .button {
+        margin-left: 34rem;
+    }
+
+    .bubble-part-s {
+        left: 24rem;
+    }
+    
+    .bubble-part-l {
+        left: 27rem;
+    }
+}
+
+@media (min-width: 1190px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 1190px;
+    }
+
+    nav img {
+        width: 10%;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        top: 2rem;
+        right: -25rem;
+        background-color: transparent;
+    }
+
+    .navbar-item {
+        padding: 2rem;
+    }
+
+    .navbar-link {
+        font-size: 1.5rem;
+    }
+
+    .navbar .button {
+        font-size: 1.5rem;
+    }
+
+    .home h1 {
+        text-align: left;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .home .video {
+        width: 50%;
+        height: 30rem;
+        margin-left: 5rem;
+    }
+
+    .home .button {
+        display: flex;
+        flex-direction: column;
+        margin-top: -14rem;
+        margin-left: 78rem;
+    }
+
+    .speechbubble {
+        margin-top: 22rem;
+    }
+
+    .speechbubble img {
+        margin-left: 5rem;
+    }
+
+    .bubble-part-s {
+        bottom: 18rem;
+        left: 29rem;
+    }
+
+    .bubble-part-l {
+        bottom: 20rem;
+        left: 31rem;
+    }
+
+    .speechbubble p {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+
+    .tool-board {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tool-card {
+        margin-right: 2rem;
+    }
+
+    .nieuws-stukken {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nieuws-stukken .nieuws-card {
+        width: 25%;
+        margin: 2rem;
+    }
+
+    .nieuws-stukken img {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: 20%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1650px;
+    }
+
+    .header {
+        margin-top: -1.1rem;
+        width: 191rem;
+    }
+
+    .header img {
+        width: 7%;
+    }
+
+    .navbar {
+        right: -62rem;
+    }
+
+    .home .video {
+        width: 45%;
+        height: 35rem;
+    }
+
+    .home .button {
+        font-size: 2.5rem;
+        margin-left: 120rem;
+    }
+
+    .bubble-part-s {
+        bottom: 13rem;
+        left: 37rem;
+    }
+
+    .bubble-part-l {
+        bottom: 16rem;
+        left: 40rem;
+    }
+
+    .tools {
+        width: 1910px;
+        height: 930px;
+    }
+
+    .tool-board {
+        margin-left: 10rem;
+    }
+
+    .tools .tool-card {
+        margin-right: 10rem;
+        width: 20%;
+        height: 800px;
+    }
+
+    .tool-card h2 {
+        font-size: 2.9rem;
+        margin-bottom: 3rem;
+    }
+
+    .tool-card p {
+        font-size: 2.5rem;
+        height: 100%;
+    }
+
+    .nieuws {
+        width: 1910px;
+    }
+
+    .nieuws h1 {
+        margin-top: 2rem;
+    }
+
+    .nieuws p {
+        width: 85%;
+        font-size: 2.5rem;
+        margin-bottom: 2rem
+    }
+
+    .nieuws .button {
+        font-size: 2.2rem;
+    }
+
+    .footer {
+        width: 1910px;
+    }
+
+    .footer p {
+        width: 20%;
+    }
+}

@@ -19,14 +19,22 @@ html {
     font-size: 62.5%;
 }
 
+.container {
+    max-width: 53rem;
+}
+
 .header {
-    width: 60rem;
+    width: 100%;
     height: 10rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--primary);
     margin-bottom: 2rem;
+}
+
+.current {
+    text-decoration: underline;
 }
 
 nav {
@@ -167,8 +175,8 @@ nav img {
     height: 3rem;
     background-color: var(--primary);
     border-radius: 50%;
-    left: 18rem;
-    bottom: 21rem;
+    left: 16rem;
+    bottom: 20rem;
 }
 
 .bubble-part-l {
@@ -177,15 +185,15 @@ nav img {
     height: 5rem;
     background-color: var(--primary);
     border-radius: 50%;
-    left: 20rem;
-    bottom: 23rem;
+    left: 18rem;
+    bottom: 22rem;
 }
 
 .home p {
     background-color: var(--primary);
     height: 50%;
     margin-top: 1rem;
-    margin-left: 4rem;
+    margin-left: 5rem;
     margin-right: 2rem;
     text-align: center;
     padding: 3rem;

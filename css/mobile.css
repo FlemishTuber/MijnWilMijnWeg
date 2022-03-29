@@ -139,12 +139,6 @@ nav img {
     flex-direction: column;
 }
 
-.video {
-    width: 35rem;
-    height: 20rem;
-    margin-left: 12rem;
-}
-
 .home .button {
     display: flex;
     flex-direction: column;

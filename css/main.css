@@ -149,6 +149,10 @@ a:hover {
     flex-direction: column;
 }
 
+.home .video {
+    align-self: center;
+}
+
 .home .button {
     display: flex;
     flex-direction: column;
@@ -352,6 +356,46 @@ a:hover {
     background-color: var(--secondary);
 }
 
+.contact-bubble {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-bubble img {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    transition: all .3s ease;
+}
+
+.contact-bubble img:hover {
+    box-shadow: 0 1rem 2rem var(--black);
+}
+
+.contact-bubble .contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    align-self: center;
+}
+
+.contact-bubble .contact-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-bubble .contact-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.side-img img {
+    display: none;
+}
 /*
     Footer
 */

@@ -1,0 +1,609 @@
+:root {
+    --primary: #56407F;
+    --secondary: #7C8AE1;
+    --white: #fff;
+    --black: #000;
+    --blue: #8BBCE0;
+    --border-color: #3F3F3F;
+    --light-gray: #BEBEBE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 53rem;
+}
+
+.header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+nav img {
+    width: 20%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.hamburger.change .line {
+    transition: all .3s ease;
+}
+
+.hamburger.change .line:nth-child(1) {
+  transform: rotate(45deg) translateY(1.9rem);
+}
+
+.hamburger.change .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.change .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-1.9rem);
+}
+
+.line {
+    cursor: pointer;
+    width: 3rem;
+    height: .3rem;
+    margin-bottom: 1rem;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    top: -100rem;
+}
+
+.active {
+    top: 10rem;
+    transition: all .3s ease;
+}
+
+.navbar-item {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+
+.fa-cart-shopping {
+    color: var(--white);
+    margin: 0rem;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.button {
+    transition: all .3s ease;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    background-color: var(--secondary);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0rem 0.3rem 0.5rem var(--black);
+    cursor: pointer;
+}
+
+.home {
+    width: 100%;
+}
+
+.home h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.videoEnbuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.home .button {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    text-align: center;
+    padding: 1rem;
+    width: 20%;
+    margin-left: 24rem;
+}
+
+.speechbubble {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.speechbubble img {
+    width: 30%;
+    height: 30%;
+    margin-right: 2rem;
+    margin-top: 20rem;
+    margin-bottom: 2.3rem;
+}
+
+.bubble-part-s {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: 16rem;
+    bottom: 20rem;
+}
+
+.bubble-part-l {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    left: 18rem;
+    bottom: 22rem;
+}
+
+.home p {
+    background-color: var(--primary);
+    height: 50%;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 80px;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.tools {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Screenshot\ 2022-03-20\ 183511.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tools h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem;
+    color: var(--white);
+}
+
+.tool-board {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+.tool-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--blue);
+    border-radius: 40px;
+    border: 5px solid var(--border-color);
+}
+
+.tool-card h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.tool-card p {
+    font-size: 1.5rem;
+}
+
+.nieuws {
+    padding-bottom: 3rem;
+    background-color: var(--border-color);
+    border-bottom: 5px solid var(--light-gray);
+}
+
+.titel-nieuws {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--white);
+}
+
+.nieuws-stukken {
+    position: relative;
+}
+
+
+.nieuws-card p {
+    font-size: 1.5rem;
+    margin: 2rem;
+    color: var(--light-gray);
+    width: 50%;
+}
+
+.nieuws-card .button {
+    text-transform: uppercase;
+    margin-left: 1.9rem;
+    display: inline;
+}
+
+.nieuws-stukken img {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    top: 1rem;
+    right: 1rem;
+}
+
+.button:hover {
+    background: var(--primary);
+}
+
+/*
+    Footer
+*/
+
+footer section {
+    display: flex;
+    flex: row;
+}
+
+footer {
+    background-color: var(--secondary);
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: row;
+    margin: 0 2rem 2rem 2rem;
+    justify-content: space-between;
+}
+
+.footer-heading p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: var(--white);
+}
+
+.nieuwsbrief {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.nieuwsbrief p {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.nieuwsbrief input[type = "text"] {
+    height: 3rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    transition: all .5s ease;
+}
+
+.nieuwsbrief input[type = "text"]:focus {
+    border-radius: 0;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    width: 50vw;
+    transition: all 500ms ease-in-out;
+}
+
+.nieuwsbrief input[type = "submit"] {
+    color: var(--white);
+    font-size: 1.2rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0rem 0.3rem 0.5rem var(--black);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-bottom: 2rem;
+}
+
+.nieuwsbrief input[type = "submit"]:hover {
+    background-color: var(--secondary);
+    display: inline;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2.25rem;
+}
+
+.social-icons i {
+    font-size: 2.5rem;
+    margin: 0.2rem;
+    color: var(--primary);
+    transition: all .5s ease;
+}
+
+.social-icons i:hover {
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 850px) {
+    .container {
+        max-width: 850px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav img {
+        width: 15%;
+    }
+
+    .video {
+        margin-left: 24rem;
+    }
+
+    .home .button {
+        margin-left: 34rem;
+    }
+
+    .bubble-part-s {
+        left: 24rem;
+    }
+    
+    .bubble-part-l {
+        left: 27rem;
+    }
+}
+
+@media (min-width: 1190px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 1190px;
+    }
+
+    nav img {
+        width: 10%;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        top: 2rem;
+        right: -25rem;
+        background-color: transparent;
+    }
+
+    .navbar-item {
+        padding: 2rem;
+    }
+
+    .navbar-link {
+        font-size: 1.5rem;
+    }
+
+    .navbar .button {
+        font-size: 1.5rem;
+    }
+
+    .home h1 {
+        text-align: left;
+        margin-left: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .home .video {
+        width: 50%;
+        height: 30rem;
+        margin-left: 5rem;
+    }
+
+    .home .button {
+        display: flex;
+        flex-direction: column;
+        margin-top: -14rem;
+        margin-left: 78rem;
+    }
+
+    .speechbubble {
+        margin-top: 22rem;
+    }
+
+    .speechbubble img {
+        margin-left: 5rem;
+    }
+
+    .bubble-part-s {
+        bottom: 18rem;
+        left: 29rem;
+    }
+
+    .bubble-part-l {
+        bottom: 20rem;
+        left: 31rem;
+    }
+
+    .speechbubble p {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-left: 6rem;
+    }
+
+    .tool-board {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tool-card {
+        margin-right: 2rem;
+    }
+
+    .nieuws-stukken {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nieuws-stukken .nieuws-card {
+        width: 25%;
+        margin: 2rem;
+    }
+
+    .nieuws-stukken img {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        width: 20%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1650px;
+    }
+
+    .header {
+        margin-top: -1.1rem;
+        width: 191rem;
+    }
+
+    .header img {
+        width: 7%;
+    }
+
+    .navbar {
+        right: -62rem;
+    }
+
+    .home .video {
+        width: 45%;
+        height: 35rem;
+    }
+
+    .home .button {
+        font-size: 2.5rem;
+        margin-left: 120rem;
+    }
+
+    .bubble-part-s {
+        bottom: 13rem;
+        left: 37rem;
+    }
+
+    .bubble-part-l {
+        bottom: 16rem;
+        left: 40rem;
+    }
+
+    .tools {
+        width: 1910px;
+        height: 930px;
+    }
+
+    .tool-board {
+        margin-left: 10rem;
+    }
+
+    .tools .tool-card {
+        margin-right: 10rem;
+        width: 20%;
+        height: 800px;
+    }
+
+    .tool-card h2 {
+        font-size: 2.9rem;
+        margin-bottom: 3rem;
+    }
+
+    .tool-card p {
+        font-size: 2.5rem;
+        height: 100%;
+    }
+
+    .nieuws {
+        width: 1910px;
+    }
+
+    .nieuws h1 {
+        margin-top: 2rem;
+    }
+
+    .nieuws p {
+        width: 85%;
+        font-size: 2.5rem;
+        margin-bottom: 2rem
+    }
+
+    .nieuws .button {
+        font-size: 2.2rem;
+    }
+
+    .footer {
+        width: 1910px;
+    }
+
+    .footer p {
+        width: 20%;
+    }
+}

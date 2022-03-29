@@ -292,6 +292,66 @@ a:hover {
     background: var(--primary);
 }
 
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact form {
+    width: 60%;
+    align-self: center;
+    align-items: center;
+}
+
+.contact .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contact .input-group .label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .input-group .textbox {
+    height: 3rem;
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
+    padding: .8rem;
+}
+
+.contact .input-group .textarea {
+    max-width: 100%;
+    min-height: 5rem;
+    max-height: 10rem;
+    padding: .8rem;
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
+}
+
+.contact .submit {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    border-radius: 5rem;
+    transition: .3s ease;
+}
+
+.contact .submit:hover {
+    background-color: var(--secondary);
+}
+
 /*
     Footer
 */

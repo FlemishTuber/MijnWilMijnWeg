@@ -292,59 +292,6 @@ a:hover {
     background: var(--primary);
 }
 
-<<<<<<< HEAD:css/mobile.css
-.contact {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-}
-
-.contact form {
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact .input-group {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-bottom: 3rem;
-}
-
-.contact .input-group .label {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.contact .input-group .textbox {
-    width: 25rem;
-    height: 3.5rem;
-    border-radius: .5rem;
-    border: 2px solid var(--primary);
-}
-
-.contact .input-group .textarea {
-    min-width: 25rem;
-    max-width: 25rem;
-    min-height: 30rem;
-    max-height: 45rem;
-}
-
-.footer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-=======
 /*
     Footer
 */
@@ -355,7 +302,6 @@ footer section {
 }
 
 footer {
->>>>>>> a8cdaba6488c40381708bfe863d31b40680ac095:css/main.css
     background-color: var(--secondary);
 }
 

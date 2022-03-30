@@ -19,12 +19,12 @@
                 <div class="line"></div>
             </div>
                 <ul class="navbar">
-                    <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/home/">Home</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="#">Coaches</a></li>
                     <li class="navbar-item"><a class="navbar-link" href="/shop/">Winkels</a></li>
                     <li class="navbar-item current"><a class="navbar-link" href="/contact/">Contact</a></li>
-                    <li class="navbar-item"><a class="button" href="#">Registreer</a></li>
-                    <li class="navbar-item"><a class="button" href="#">Login</a></li>
+                    <li class="navbar-item"><a class="button" href="/register/">Registreer</a></li>
+                    <li class="navbar-item"><a class="button" href="/login/">Login</a></li>
                 </ul>
         </nav>
     </header>
@@ -35,12 +35,12 @@
                 <h1>Contacteer ons</h1>
                 <form action="#">
                     <div class="input-group">
-                        <label class="label">Naam</label>
-                        <input class ="textbox" type="text" placeholder="Geef je naam in...">
+                        <label class="label">Naam <span>*</span></label>
+                        <input class ="textbox" type="text" placeholder="Geef je naam in..." required autofocus>
                     </div>
                     <div class="input-group">
-                        <label class="label">E-mailadres</label>
-                        <input class ="textbox" type="email" placeholder="Geef je e-mailadres in...">
+                        <label class="label">E-mailadres <span>*</span></label>
+                        <input class ="textbox" type="email" placeholder="Geef je e-mailadres in..." required>
                     </div>
                     <div class="input-group">
                         <label class="label">Bericht:</label>

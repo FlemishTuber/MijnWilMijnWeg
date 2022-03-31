@@ -505,6 +505,39 @@ footer {
 }
 
 
+/*Coaches*/
+
+.coaches {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.coaches > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.coaches img {
+    display: block;
+    width: 100%;
+}
+
+.coaches button {
+    display: block;
+    padding: .5rem;
+    margin: 0.8rem 0;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 3rem;
+    border: 2px solid var(--border-color);
+    width: 50%;
+}
+
+/**/
 @media (min-width: 850px) {
     .container {
         max-width: 850px;
@@ -532,6 +565,14 @@ footer {
         left: 27rem;
     }
 
+    .coaches {
+        flex-direction: row;
+        max-width: 120em;
+    }
+
+    .coaches > div {
+        width: 40%;
+    }
     .contact .input-group {
         text-align: center;
     }

@@ -58,7 +58,7 @@ nav img {
 }
 
 .hamburger.change .line {
-    transition: all .3s ease;
+    transition: all .3s ease-in-out;
 }
 
 .hamburger.change .line:nth-child(1) {

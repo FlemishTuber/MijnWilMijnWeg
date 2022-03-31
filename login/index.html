@@ -1,0 +1,79 @@
+<!-- Author: Berre Staelens-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Wil, Mijn Weg | Login</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">`
+    <header class="header">
+        <nav>
+            <a href="#"><img src="/img/logo 2.png" alt=""></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+                <ul class="navbar">
+                    <li class="navbar-item"><a class="navbar-link" href="/home/">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#">Coaches</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/shop/">Winkel</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact/">Contact</a></li>
+                    <li class="navbar-item"><a class="button" href="/register/">Registreer</a></li>
+                    <li class="navbar-item current"><a class="button" href="/login/">Login</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Log in</h1>
+        <form action="login" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="control-label" for="input-email">E-mail</label>
+                <input type="text" name="email" value="email" placeholder="E-mail" id="input-email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="input-password">Wachtwoord</label>
+                <input type="password" name="password" value="" placeholder="Wachtwoord" id="input-password" class="form-control">
+                <a href="#">Wachtwoord resetten</a></div>
+            <input type="hidden" name="moduleAction" value="login">
+            <input type="submit" value="Log in">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-heading">
+                <p>Schrijf je in onderaan de pagina om up to date te zijn met ‘Mijn wil, mijn weg’.</p>
+                <p>Candy Junius 
+                    Master Practitioner NLP-coach
+                    Trainer in talenten & ondernemende vaardigheden
+                    'Ondernemer van mijn eigen leven!'
+                </p>
+                <p>Ga naar onze meerdere social media platforms voor meer informatie.</p>
+            </div>
+            <div class="nieuwsbrief">
+                <p>Nieuwsbrief</p>
+                <form action="#">
+                    <input type="text" placeholder="Geef je email-address ...">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</div>    
+    <script src="script.js"></script>
+</body>
+</html>

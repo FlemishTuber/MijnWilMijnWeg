@@ -149,6 +149,10 @@ a:hover {
     flex-direction: column;
 }
 
+.home .video {
+    align-self: center;
+}
+
 .home .button {
     display: flex;
     flex-direction: column;
@@ -292,6 +296,122 @@ a:hover {
     background: var(--primary);
 }
 
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact form {
+    width: 60%;
+    align-self: center;
+    align-items: center;
+}
+
+.contact .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.contact .input-group .label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .input-group .textbox {
+    height: 3rem;
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
+    padding: .8rem;
+    transition: all .3s ease;
+}
+
+.contact .input-group .textbox:hover {
+    border-color: var(--secondary);
+    border-radius: 0;
+}
+
+.contact .input-group .textarea {
+    max-width: 100%;
+    min-height: 5rem;
+    max-height: 10rem;
+    padding: .8rem;
+    border: 2px solid var(--primary);
+    border-radius: .5rem;
+    transition: all .3s ease;
+}
+
+.contact .input-group .textarea:hover {
+    border-color: var(--secondary);
+    border-radius: 0;
+}
+
+.contact .submit {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    border-radius: 5rem;
+    transition: .3s ease;
+}
+
+.contact .submit:hover {
+    background-color: var(--secondary);
+}
+
+.contact-bubble {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-bubble img {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    transition: all .3s ease;
+}
+
+.contact-bubble img:hover {
+    box-shadow: 0 1rem 2rem var(--black);
+}
+
+.contact-bubble .contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    align-self: center;
+}
+
+.contact-bubble .contact-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-bubble .contact-text p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact .label span {
+    color: #e00b0b;
+}
+
+.side-img img {
+    display: none;
+}
 /*
     Footer
 */
@@ -453,6 +573,29 @@ footer {
     .coaches > div {
         width: 40%;
     }
+    .contact .input-group {
+        text-align: center;
+    }
+
+    .contact .input-group .textbox {
+        width: 80%;
+        align-self: center;
+    }
+
+    .contact .input-group .textarea {
+        min-width: 410px;
+        max-width: 410px;
+        align-self: center;
+    }
+
+    .contact .submit {
+        margin-left: 21rem;
+    }
+
+    .contact-bubble img {
+        width: 30%;
+        height: 30%;
+    }
 }
 
 @media (min-width: 1190px) {
@@ -557,8 +700,71 @@ footer {
         margin-top: 2rem;
         margin-right: 2rem;
         width: 20%;
-    }   
+    }
 
+    .contact {
+        position: relative;
+    }
+
+    .contact form {
+        margin-left: 10rem;
+        align-self: flex-start;
+    }
+
+    .contact h1 {
+        text-align: left;
+        font-size: 3rem;
+        margin-left: 10rem;
+    }
+
+    .contact .input-group {
+        text-align: left;
+    }
+
+    .contact .input-group .label {
+        font-size: 2rem;
+    }
+
+    .contact .input-group .textbox {
+        align-self: flex-start;
+        width: 40%;
+    }
+
+    .contact .input-group .textarea {
+        align-self: flex-start;
+        min-width: 286px;
+        max-width: 286px;
+    }
+
+    .contact .submit {
+        margin-left: 0;
+    }
+
+    .contact-bubble {
+        flex-direction: row;
+    }
+
+    .contact-bubble img {
+        width: 20%;
+        height: 20%;
+        margin-left: 10rem;
+    }
+
+    .contact-bubble .contact-text {
+        text-align: left;
+        margin-left: 5rem;
+        width: 40%;
+    }
+
+    .side-img img {
+        display: flex;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 13rem;
+        right: 5rem;
+        border-radius: 50rem;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -648,5 +854,69 @@ footer {
 
     .footer p {
         width: 20%;
+    }
+
+    .contact {
+        position: relative;
+    }
+
+    .contact form {
+        margin-left: 30rem;
+        align-self: flex-start;
+    }
+
+    .contact h1 {
+        text-align: left;
+        font-size: 3rem;
+        margin-left: 30rem;
+    }
+
+    .contact .input-group {
+        text-align: left;
+    }
+
+    .contact .input-group .label {
+        font-size: 2rem;
+    }
+
+    .contact .input-group .textbox {
+        align-self: flex-start;
+        width: 40%;
+    }
+
+    .contact .input-group .textarea {
+        align-self: flex-start;
+        min-width: 396px;
+        max-width: 396px;
+    }
+
+    .contact .submit {
+        margin-left: 0;
+    }
+
+    .contact-bubble {
+        flex-direction: row;
+    }
+
+    .contact-bubble img {
+        width: 20%;
+        height: 20%;
+        margin-left: 30rem;
+    }
+
+    .contact-bubble .contact-text {
+        text-align: left;
+        margin-left: 5rem;
+        width: 40%;
+    }
+
+    .side-img img {
+        display: flex;
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        top: 13rem;
+        right: 15rem;
+        border-radius: 50rem;
     }
 }

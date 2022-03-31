@@ -1,0 +1,119 @@
+<!-- Author: Berre Staelens -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Wil, Mijn Weg | Registreer</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">`
+    <header class="header">
+        <nav>
+            <a href="#"><img src="/img/logo 2.png" alt=""></a>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+                <ul class="navbar">
+                    <li class="navbar-item"><a class="navbar-link" href="/home/">Home</a></li>
+                    <li class="navbar-item "><a class="navbar-link" href="#">Coaches</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/shop/">Winkel</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact/">Contact</a></li>
+                    <li class="navbar-item current"><a class="button" href="/register/">Registreer</a></li>
+                    <li class="navbar-item"><a class="button" href="/login/">Login</a></li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Registreren</h1>
+        <a class="button" href="#">Start een traject</a>
+
+        <form action="register" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Voornaam</label>
+                <input type="text" name="fname" value="fname" placeholder="Voornaam" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Naam</label>
+                <input type="text" name="name" value="name" placeholder="Naam" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">E-mail</label>
+                <input type="text" name="email" value="email" placeholder="E-mail" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Straat</label>
+                <input type="text" name="street" value="street" placeholder="Straat" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Nummer | Bus</label>
+                <input type="text" name="number" value="number" placeholder="Nummer / Bus" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Gemeente</label>
+                <input type="text" name="town" value="town" placeholder="Gemeente" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Postcode</label>
+                <input type="text" name="zip" value="zip" placeholder="Postcode" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Telefoonnummer/GSM</label>
+                <input type="text" name="phone" value="phone" placeholder="Tel/GSM" id="input-fname" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label" for="input-fname">Kies een wachtwoord</label>
+                <input type="text" name="password" value="password" placeholder="Wachtwoord" id="input-fname" class="form-control">
+            </div>
+
+            
+            <input type="hidden" name="moduleAction" value="register">
+            <input type="submit" value="REGISTREREN">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-heading">
+                <p>Schrijf je in onderaan de pagina om up to date te zijn met ‘Mijn wil, mijn weg’.</p>
+                <p>Candy Junius 
+                    Master Practitioner NLP-coach
+                    Trainer in talenten & ondernemende vaardigheden
+                    'Ondernemer van mijn eigen leven!'
+                </p>
+                <p>Ga naar onze meerdere social media platforms voor meer informatie.</p>
+            </div>
+            <div class="nieuwsbrief">
+                <p>Nieuwsbrief</p>
+                <form action="#">
+                    <input type="text" placeholder="Geef je email-address ...">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</div>    
+    <script src="script.js"></script>
+</body>
+</html>

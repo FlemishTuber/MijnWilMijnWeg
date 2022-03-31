@@ -551,6 +551,9 @@ footer {
 
     .video {
         margin-left: 24rem;
+        padding-top: 56.25%;
+        border: none;
+
     }
 
     .home .button {
